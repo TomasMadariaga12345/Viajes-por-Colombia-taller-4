@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+
+        .divIzquierdo {
+            width: 50%;
+            justify-content: left;
+
+        }
+
+        .divDerecho {
+            display: flex;
+            width: 50%;
+            justify-content: right;
+            gap: 10px;
+
+        }
+
+        .TituloDePaises {
+            background-color: #9fd133;
+            color: white;
+            padding: 7%;
+            display: flex;
+            font-size: 120%;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .imagenesDePaises {
+            height: 210px;
+            width: 240px;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body style="margin: 0px;">
+
+    <script>
+        var img = document.createElement("img")
+
+        img.src = "../recursos/Img.jpg"
+        img.style.width = "100%"
+        img.style.height = "600px"
+        img.style.position = "relative"
+
+        document.body.appendChild(img)
+
+        var header = document.createElement("header")
+        header.innerHTML = `
+
+        <div class="divIzquierdo">
+            <img src="../recursos/LOGO 2.png" alt="" height="75px" width="100px">
+        </div>
+
+        <div class="divDerecho">
+        <div class="BotonesNada">
+        <a href="#" class="ButtonHome">HOME</a>
+        </div>
+        <a href="#">SERVICES</a>
+        <a href="#">EVENTS</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">CONTACT</a>
+
+        </div>
+    `
+        header.style.display = "flex"
+        header.style.top = "-550px"
+        header.style.position = "relative"
+        header.style.marginRight = "auto"
+        header.style.marginLeft = "auto"
+        header.style.height = "80px"
+        header.style.width = "80%"
+        header.style.alignItems = "center"
+        header.style.backgroundColor = "white"
+
+        document.body.appendChild(header)
+
+        var divInfo = document.createElement("divInfo")
+        divInfo.innerHTML = `
+        <div>
+            <br>    
+        <span class="TituloPrecio" style="font-size: 25px; background-color: red; padding: 10px 25px; ">$8,450</span>
+        <h3 style="color: black;">Venice Italy</h3>
+        <p>Travel is free responsive template by templatemo <br>
+           all images use in this template are from Unisplash</p>
+        <br>
+        <a href="#" style="background-color: green; padding: 15px 25px " >PRE-BOOKING</a>
+        </div>
+        `
+        divInfo.style.display = "flex"
+        divInfo.style.position = "relative"
+        divInfo.style.height = "250px"
+        divInfo.style.width = "350px"
+        divInfo.style.top = "-450px"
+        divInfo.style.left = "120px"
+        divInfo.style.backgroundColor = "white"
+        divInfo.style.textAlign = "center"
+
+        document.body.appendChild(divInfo)
+
+        var divCard = document.createElement("divCard")
+        divCard.innerHTML = `
+        <div>
+            <span class="TituloDePaises">ITALY</span>
+            <img src="../recursos/italia.jpg" alt="italia" class="imagenesDePaises">
+            <p style="color: #9fd133;">Rome, Milan, Naples</p>
+            <p style="color: #eb4245;">SILVER HOTEL, 4 NIGHTS, 5 STARS</p>
+            <br>
+            <a href="#" class="BotonCompar">$1,800 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="TituloDePaises">FRANCE</span>
+            <img src="../recursos/francia.jpeg" alt="francia" class="imagenesDePaises">
+            <p style="color: #9fd133;">Paris, Marseille, Lyon</p>
+            <p style="color: #eb4245;">NEW PLACE , 5 NIGHTS , 5 STARS </p>
+            <br>
+            <a href="#" class="BotonCompar">$2,300 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="TituloDePaises">GERMANY</span>
+            <img src="../recursos/alemania.jpg" alt="alemania" class="imagenesDePaises">
+            <p style="color: #9fd133;">Berlin, Hamburg, Munich</p>
+            <p style="color: #eb4245;">LUXE HOTEL, 5 NIGHTS, 6 STARS</p>
+            <br>
+            <a href="#" class="BotonCompar">$3,100 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="TituloDePaises">SPAIN</span>
+            <img src="../recursos/españa.jpeg" alt="españa" class="imagenesDePaises">
+            <p style="color: #9fd133;">Madrid, Barcelona, Valencia</p>
+            <p style="color: #eb4245;">GOOHD HOTEL, 4 NIGHTS, 6 STARS</p>
+            <br>
+            <a href="#" class="BotonCompar">$4.800 BOOK NOW</a>
+        </div>
+
+        `
+        divCard.style.display = "flex"
+        divCard.style.gap = "40px"
+        divCard.style.marginLeft = "auto"
+        divCard.style.marginRight = "auto"
+        divCard.style.position = "relative"
+        divCard.style.margin = "0%"
+        divCard.style.marginTop = "-395px"
+
+        divCard.style.justifyContent = "center"
+        document.body.appendChild(divCard)
+
+
+    </script>
+
+
+</body>
+
+</html>
